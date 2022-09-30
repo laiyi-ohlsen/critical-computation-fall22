@@ -1,6 +1,5 @@
-//example using mousePressed and mouseReleasd functions with return statements 
-
-let xloc=-100, yloc=-100; 
+//example using return with keyPressed
+let phrase =""; 
 function setup() {
   createCanvas(400, 400);
   
@@ -9,16 +8,11 @@ function setup() {
 function draw() {
   background(255);
   textSize(24);
-  text(`${key}`, 200,200)
+  text(`${phrase}`, 100,200)
   
 }
 
 function keyPressed() {
-  return key; 
-}
-
-function drawCircle(x,y){
-  fill(255,204,0,80); 
-  noStroke(); 
-  circle(x,y,100);
+  phrase = "I am pressing the "+ key+ " key";
+  return phrase; 
 }

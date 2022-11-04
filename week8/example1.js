@@ -30,8 +30,6 @@ function draw() {
     circles[x].move();
   } 
   
-
-  
 }
 function mousePressed(){
   xpos = mouseX;
